@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>    
-    <link rel="stylesheet" href="CSS/style.css"/>
+    <link rel="stylesheet" href="CSS/style.css"/>  
+    <script type="text/javascript" src="./script/script.js" defer></script>      
 </head>
-<body>
-    
+<body>    
+    <div id="img-div">
+        <div id="logo-div">
+            <img id="logo-img" src="./img/jap_logo.png">
+            <span id="logo-text">JAP LOGO</span>
+        </div>
+    </div>
+    <div id="form-div">    
+        <form id="sub-form" action="https://github.com/CorraDEV">
+            <div class="input-group">
+                <div class="single-input">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name" required>
+                </div>
+                <div class="single-input">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name" required>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="single-input">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="single-input">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" name="phone-number" id="phone-number" required>        
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="single-input">
+                    <label for="psw">Password</label>
+                    <input type="password" name="psw" id="psw" required>
+                    <span class="error-psw">* Password must contain at least 12 characters</span>
+                </div>
+                <div class="single-input">
+                    <label for="con-psw">Confirm Password</label>
+                    <input type="password" name="con-psw" id="con-psw" required>
+                    <span class="error-con-psw">* Password is not the same</span>
+                </div>
+            </div>
+            <button id="submit-btn" type="submit">Create Account</button>
+            <span>Already have an account? <a href="#">Log in</a></span>
+        </form>
+    </div>
 </body>
 </html>

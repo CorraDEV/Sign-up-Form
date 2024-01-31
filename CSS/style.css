@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#sub-form{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;            
+    gap: 20px;
+}
+
+#form-div{        
+    align-self: center;   
+    margin-left: 15%;             
+}
+
+.input-group{
+    display: flex;      
+    gap: 20px;
+}
+
+.single-input{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+
+.single-input > input{
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    padding: 0.4em;
+    font-size: 1em;    
+}
+
+.single-input > input:focus{
+    border-color: blue;
+    box-shadow: 10px 10px 20px 0 rgba(0,0,0,0.5);
+}
+
+#submit-btn{
+    width: fit-content;
+    padding: 5px 40px;
+    font-weight: bolder;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#img-div{        
+    width: 400px;    
+    background-image: url("../img/bg_img.jpg");
+    background-size: cover;    
+    height: 100vh;
+}
+
+#logo-div{
+    width: 100%;
+    background-color: rgba(255, 170, 150, 0.5);  
+}
+
+#logo-img{
+    width: 150px;
+    height: 150px;              
+}
+
+#logo-text{
+    display: block;    
+    width: fit-content;
+    margin-left: 2em;            
+    font-weight: bolder;    
+}
+
+.error-psw,
+.error-con-psw{
+    display: none;
+    color: red;
+    font-size: 16px;        
+    width: 300px;
+    overflow-wrap: break-word;    
+}
+
+body{
+    margin: 0;
+    display: flex;
+    height: 100vh;    
+    font-family: "Roboto";
+    background-color: rgb(201, 201, 201);
+    font-weight: bolder;
+}
